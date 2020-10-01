@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".header-slider").slick({
+  $(".about-slider").slick({
     infinite: true,
     fade: true,
     autoplaySpeed: 2500,

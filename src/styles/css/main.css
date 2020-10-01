@@ -16,6 +16,16 @@
   padding: 0 15px;
 }
 
+h2 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
 li {
   list-style: none;
 }
@@ -60,19 +70,19 @@ a {
   bottom: 5px;
 }
 
-.header-top__inner {
+.header__inner {
   height: 133px;
   display: flex;
   align-items: center;
 }
-.header-top__column {
+.header__column {
   flex: 1 1 auto;
 }
-.header-top__cart {
+.header__cart {
   text-align: end;
   position: relative;
 }
-.header-top__cart .cart__count {
+.header__cart .cart__count {
   position: absolute;
   display: block;
   content: "";
@@ -119,41 +129,41 @@ select:focus {
   margin-right: 10px;
 }
 
-.header-bottom {
+.about {
   height: 596px;
   position: relative;
 }
-.header-bottom__inner {
+.about__inner {
   position: absolute;
   top: 139px;
   left: 336px;
 }
-.header-bottom__column {
+.about__column {
   display: flex;
   flex-direction: column;
   width: 39%;
 }
-.header-bottom__title {
+.about__title {
   font-size: 64px;
   font-weight: bold;
 }
-.header-bottom__text {
+.about__text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   margin-top: 20px;
 }
-.header-bottom__price {
+.about__price {
   margin-top: 50px;
 }
-.header-bottom__price .price {
+.about__price .price {
   font-size: 32px;
   font-weight: bold;
 }
-.header-bottom__price .price_discount {
+.about__price .price_discount {
   font-size: 20px;
   text-decoration: line-through;
 }
-.header-bottom__btn {
+.about__btn {
   margin-top: 65px;
 }
 
@@ -162,22 +172,22 @@ select:focus {
   padding-right: 83px;
 }
 
-.header-slider__item1 {
-  background: url("../../../../src/img/header/banner_1.jpg");
+.about-slider__item1 {
+  background: url("../../../../src/img/main/about/banner_1.jpg");
 }
-.header-slider__item2 {
-  background: url("../../../../src/img/header/banner_2.jpg");
+.about-slider__item2 {
+  background: url("../../../../src/img/main/about/banner_2.jpg");
 }
-.header-slider__item3 {
-  background: url("../../../../src/img/header/banner_3.jpg");
+.about-slider__item3 {
+  background: url("../../../../src/img/main/about/banner_3.jpg");
 }
-.header-slider .slick-track {
+.about-slider .slick-track {
   height: 596px;
 }
-.header-slider .slick-slide:focus {
+.about-slider .slick-slide:focus {
   outline: none;
 }
-.header-slider .arrow {
+.about-slider .arrow {
   width: 43px;
   height: 116px;
   background-color: #ffffff40;
@@ -186,18 +196,18 @@ select:focus {
   top: 220px;
   transition: 1s ease;
 }
-.header-slider .arrow:hover {
+.about-slider .arrow:hover {
   cursor: pointer;
   background-color: #ffffffad;
 }
-.header-slider .arrow_left {
+.about-slider .arrow_left {
   left: 280px;
 }
-.header-slider .arrow_right {
+.about-slider .arrow_right {
   right: 13%;
   transform: scaleX(-1);
 }
-.header-slider .arrow::before {
+.about-slider .arrow::before {
   position: absolute;
   top: 43px;
   left: 15px;
@@ -210,8 +220,67 @@ select:focus {
   transform: rotate(45deg);
 }
 
-main {
-  background-color: red;
+.catalog {
+  position: relative;
+  padding-bottom: 60px;
+}
+.catalog__heading {
+  margin-top: 60px;
+}
+.catalog__title {
+  text-align: center;
+}
+.catalog .items-catalog {
+  margin-top: 30px;
+}
+.catalog .items-catalog__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.catalog .items-catalog .item-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 32%;
+  padding: 40px 0 30px;
+  height: 520px;
+  border-radius: 5px;
+  box-shadow: 0 1px 9px 4px rgba(0, 0, 0, 0.05);
+}
+.catalog .items-catalog .item-catalog:nth-child(1) {
+  background: url("../../../../../src/img/main/catalog/classic-honey.png") center;
+}
+.catalog .items-catalog .item-catalog:nth-child(2) {
+  background: url("../../../../../src/img/main/catalog/crem-honey.png") center;
+}
+.catalog .items-catalog .item-catalog:nth-child(3) {
+  background: url("../../../../../src/img/main/catalog/box-honey.png") center;
+}
+.catalog .items-catalog .item-catalog .btn_look {
+  width: 48%;
+}
+.catalog::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 320px;
+  height: 443px;
+  background: url("../../../../../src/img/main/catalog/1.png") no-repeat;
+  bottom: 4%;
+  z-index: -1;
+}
+.catalog::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 320px;
+  height: 278px;
+  background: url("../../../../../src/img/main/catalog/2.png") no-repeat;
+  bottom: 10%;
+  right: 0;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */

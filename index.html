@@ -11,13 +11,13 @@
 
 <body>
     <header class="header">
-        <div class="header-top">
-            <div class="header-top__inner _container">
-                <div class="header-top__column">
-                    <img src="./src/img/header/logo.png" alt="logo" class="header-top__logo">
+        <div class="header">
+            <div class="header__inner _container">
+                <div class="header__column">
+                    <img src="./src/img/header/logo.png" alt="logo" class="header__logo">
                 </div>
-                <div class="header-top__column">
-                    <nav class="header-top__nav nav">
+                <div class="header__column">
+                    <nav class="header__nav nav">
                         <ul class="nav-list">
                             <li class="nav-list__item"><select name="catalog" id="nav-list__catalog">
                                     <option value="Каталог">Каталог</option>
@@ -29,8 +29,8 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header-top__column">
-                    <div class="header-top__contacts contacts">
+                <div class="header__column">
+                    <div class="header__contacts contacts">
                         <div class="contacts__phone"><a href="tel:+37552440663">+375 (00) 000-00-00</a></div>
                         <ul class="contacts__social social">
                             <li><a href="#"><img src="./src/img/header/telegram.png" alt="telegram"></a></li>
@@ -39,41 +39,66 @@
                         </ul>
                     </div>
                 </div>
-                <div class="header-top__column">
-                    <div class="header-top__cart cart">
+                <div class="header__column">
+                    <div class="header__cart cart">
                         <div class="cart__count">0</div>
                         <a href="#"><img src="./src/img/header/cart.png" alt="cart" class="cart__to"></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header-bottom">
-            <div class="header-slider">
-                <div class="header-slider__item1"></div>
-                <div class="header-slider__item2"></div>
-                <div class="header-slider__item3"></div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="about-slider">
+                <div class="about-slider__item1"></div>
+                <div class="about-slider__item2"></div>
+                <div class="about-slider__item3"></div>
             </div>
-            <div class="header-bottom__inner _container">
-                <div class="header-bottom__column">
-                    <div class="header-bottom__heading">
-                        <h1 class="header-bottom__title">Заголовок</h1>
-                        <p class="header__bottom__text">
+            <div class="about__inner _container">
+                <div class="about__column">
+                    <div class="about__heading">
+                        <h1 class="about__title">Заголовок</h1>
+                        <p class="about__text">
                             По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
                             вызывает
                             у некторых людей недоумение при попытках прочитать ...
                         </p>
                     </div>
-                    <div class="header-bottom__price price">
+                    <div class="about__price price">
                         <span class="price  price_discount">20р,</span>
                         <span class="price">15р,</span>
                     </div>
-                    <div class="header-bottom__btn">
+                    <div class="about__btn">
                         <button class="btn btn_buy">Купить</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
+        <section class="catalog">
+            <div class="catalog-inner _container">
+                <div class="catalog__heading">
+                    <h2 class="catalog__title">Каталог</h2>
+                </div>
+                <div class="catalog__items items-catalog">
+                    <ul class="items-catalog__list">
+                        <li class="items-catalog__item item-catalog">
+                            <h3 class="item-catalog__title">Мед классический</h3>
+                            <a href="#" class="btn btn_look">Смотреть</a>
+                        </li>
+                        <li class="items-catalog__item item-catalog">
+                            <h3 class="item-catalog__title">Крем мед</h3>
+                            <a href="#" class="btn btn_look">Смотреть</a>
+                        </li>
+                        <li class="items-catalog__item item-catalog">
+                            <h3 class="item-catalog__title">Подарочные наборы</h3>
+                            <a href="#" class="btn btn_look">Смотреть</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./src/script/script.js"></script>
