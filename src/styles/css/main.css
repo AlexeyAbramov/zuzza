@@ -210,4 +210,8 @@ select:focus {
   transform: rotate(45deg);
 }
 
+main {
+  background-color: red;
+}
+
 /*# sourceMappingURL=main.css.map */
