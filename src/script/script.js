@@ -9,6 +9,7 @@ $(document).ready(function () {
   });
   $(".list-feedback").slick({
     slidesToShow: 3,
+    slidesToScroll: 3,
     infinite: true,
     pauseOnFocus: false,   
     prevArrow: '<div class="feedback__arrow arrow_left"></div>',
