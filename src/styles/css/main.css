@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Reef;
   src: url(../../font/Reef.otf) format("otf");
@@ -8,6 +9,13 @@
   padding: 0;
   font-size: 16px;
   font-family: Reef, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 ._container {
@@ -259,6 +267,7 @@ select:focus {
   background: url("../../../../../src/img/main/catalog/box-honey.png") center;
 }
 .catalog .items-catalog .item-catalog .btn_look {
+  color: #000;
   width: 48%;
 }
 .catalog::before {
@@ -281,6 +290,103 @@ select:focus {
   bottom: 10%;
   right: 0;
   z-index: -1;
+}
+
+.present {
+  background-color: #FFC700;
+}
+.present__inner {
+  display: flex;
+  justify-content: space-around;
+  padding: 78px 0;
+}
+.present__heading {
+  flex: 0 1 55%;
+}
+.present__text {
+  max-width: 69%;
+}
+.present__button {
+  align-self: flex-end;
+}
+.present .btn_go {
+  padding-left: 57px;
+  padding-right: 57px;
+  background-color: #fff;
+}
+.present .btn_go::after, .present .btn_go::before {
+  background-color: #fff;
+}
+
+.feedback {
+  position: relative;
+  padding-top: 60px;
+}
+.feedback__heading {
+  text-align: center;
+}
+.feedback__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.feedback__arrow {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 64px;
+  height: 56px;
+}
+.feedback .arrow_left {
+  background: url("../../../../../src/img/main/feedback/next.png");
+  transform: scaleX(-1);
+  top: calc(50% - 28px);
+  left: -80px;
+  cursor: pointer;
+}
+.feedback .arrow_right {
+  background: url("../../../../../src/img/main/feedback/next.png");
+  top: calc(50% - 28px);
+  right: -80px;
+  cursor: pointer;
+}
+.feedback .list-feedback .wrapper_item {
+  display: flex;
+  box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+}
+.feedback .list-feedback__item {
+  padding: 10px;
+}
+.feedback .list-feedback__item:focus,
+.feedback .list-feedback .slick-slide:focus {
+  outline: none;
+}
+.feedback .list-feedback .slick-slide {
+  margin-right: 10px;
+}
+.feedback .list-feedback .slick-track {
+  padding: 10px 0;
+}
+.feedback .list-feedback__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 0 20px 18px;
+}
+.feedback .list-feedback__title, .feedback .list-feedback__text {
+  font-size: 16px;
+  font-weight: normal;
+}
+.feedback .list-feedback__text {
+  -webkit-line-clamp: 5;
+  /* количество строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 110px;
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
