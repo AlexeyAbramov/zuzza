@@ -480,4 +480,39 @@ select:focus {
   padding-right: 25px;
 }
 
+.recipes {
+  background-color: #F9F9F9;
+}
+.recipes__inner {
+  padding: 60px 0;
+}
+.recipes__heading {
+  text-align: center;
+}
+.recipes .content-recipes {
+  margin-top: 30px;
+}
+.recipes .content-recipes__list {
+  display: flex;
+  justify-content: space-between;
+}
+.recipes .content-recipes__item {
+  flex: 0 1 31%;
+  box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.16);
+}
+.recipes .content-recipes__heading {
+  padding: 25px 0 14px 20px;
+}
+.recipes .content-recipes__picture {
+  position: relative;
+}
+.recipes .content-recipes__category {
+  padding: 5px 20px;
+  background-color: #FFC700;
+  position: absolute;
+  left: 20px;
+  bottom: -5%;
+  z-index: 999;
+}
+
 /*# sourceMappingURL=main.css.map */
