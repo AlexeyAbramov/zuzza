@@ -321,7 +321,7 @@ select:focus {
 
 .feedback {
   position: relative;
-  padding-top: 60px;
+  padding: 60px 0;
   background-color: #F9F9F9;
 }
 .feedback__heading {
@@ -395,13 +395,17 @@ select:focus {
 }
 
 .facts {
-  padding-top: 60px;
+  padding: 60px 0 30px;
 }
 .facts__heading {
   text-align: center;
 }
 .facts .content-facts {
   display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  min-height: 446px;
+  background: url("../../../../../src/img/main/facts/honey.png") no-repeat center 80%;
 }
 .facts .content-facts__left {
   flex: 0 0 42%;
@@ -409,14 +413,38 @@ select:focus {
 .facts .content-facts__right {
   flex: 0 0 42%;
 }
-.facts .content-facts .list-fact__item {
+.facts .content-facts .list-fact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.facts .content-facts .list-fact__item_left {
   display: flex;
   justify-content: flex-end;
   text-align: end;
 }
+.facts .content-facts .list-fact__item_left .list-fact__heading {
+  margin-right: 20px;
+}
+.facts .content-facts .list-fact__item_right {
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+}
+.facts .content-facts .list-fact__item_right .list-fact__heading {
+  margin-left: 20px;
+}
+.facts .content-facts .list-fact__item_left:nth-child(2) {
+  margin-right: 90px;
+}
+.facts .content-facts .list-fact__item_right:nth-child(2) {
+  margin-left: 90px;
+}
 .facts .content-facts .list-fact__img {
   height: 81px;
   min-width: 81px;
+  margin: auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -430,6 +458,26 @@ select:focus {
 }
 .facts .content-facts .list-fact__img_red {
   background-color: #EE6A1F;
+}
+.facts .content-facts .list-fact__img_blue {
+  background-color: #05A8A5;
+  order: -1;
+}
+.facts .content-facts .list-fact__img_i-orange {
+  background-color: #FECE00;
+  order: -1;
+}
+.facts .content-facts .list-fact__img_green {
+  background-color: #A5C70E;
+  order: -1;
+}
+.facts__btn {
+  text-align: center;
+  margin-top: 21px;
+}
+.facts__btn .btn_buy {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
