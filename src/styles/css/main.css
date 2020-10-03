@@ -516,7 +516,7 @@ select:focus {
 }
 
 .subscribe {
-  padding-top: 67px;
+  padding: 67px 0 50px;
   text-align: center;
 }
 .subscribe__inner {
@@ -572,6 +572,47 @@ select:focus {
   background-color: #fff;
   padding-left: 85px;
   padding-right: 85px;
+}
+
+.footer {
+  height: 327px;
+  background-color: #f9f9f9;
+}
+.footer a {
+  font-family: "Arial", sans-serif;
+  color: #000;
+}
+.footer li {
+  line-height: 25px;
+}
+.footer-top {
+  padding: 50px 0 44px;
+  display: flex;
+}
+.footer-top__column {
+  flex: 0 0 25%;
+}
+.footer-top__column:not(:last-child) {
+  border-right: 1px solid #e3e4e3;
+}
+.footer-top__column:nth-child(2) {
+  padding-left: 8%;
+}
+.footer-top__column:last-child {
+  flex: 0 0 40%;
+  padding-left: 10%;
+}
+.footer-top__column:last-child li {
+  line-height: 40px;
+}
+.footer .contacts-footer__link {
+  margin-left: 12px;
+}
+.footer-bottom__text {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
