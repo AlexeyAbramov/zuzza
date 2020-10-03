@@ -515,4 +515,63 @@ select:focus {
   z-index: 999;
 }
 
+.subscribe {
+  padding-top: 67px;
+  text-align: center;
+}
+.subscribe__inner {
+  background-color: #FFC700;
+  padding: 40px 0 60px;
+}
+.subscribe__text {
+  font-family: Arial, sans-serif;
+}
+.subscribe__form.form-subscribe {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.subscribe__form.form-subscribe input {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: none;
+  border-radius: 4px;
+}
+.subscribe__form.form-subscribe input[type=text],
+.subscribe__form.form-subscribe input[type=tel] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 1px solid #e8e8e8;
+  max-width: 55%;
+}
+.subscribe .input-wrapper {
+  display: flex;
+}
+.subscribe .input-subscribe__user,
+.subscribe .input-subscribe__phone {
+  background-color: #fff;
+  padding: 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.subscribe .form-subscribe__input_name,
+.subscribe .form-subscribe__input_phone {
+  font-family: Arial, sans-serif;
+  padding-left: 20px;
+}
+.subscribe .form-subscribe__input_name:focus,
+.subscribe .form-subscribe__input_phone:focus {
+  outline: none;
+}
+.subscribe .form-subscribe__input_phone {
+  max-width: 70% !important;
+}
+.subscribe .form-subscribe__input_button {
+  box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  background-color: #fff;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
 /*# sourceMappingURL=main.css.map */
