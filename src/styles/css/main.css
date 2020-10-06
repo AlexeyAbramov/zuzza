@@ -3,6 +3,10 @@
   font-family: "Reef";
   src: url("../../font/Reef-Bold.woff2") format("woff2"), url("../../font/Reef-Bold.woff") format("woff");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -79,6 +83,9 @@ a {
   bottom: 5px;
 }
 
+.header {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
 .header__inner {
   height: 133px;
   display: flex;
@@ -110,6 +117,9 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.nav-list__link {
+  color: #000;
+}
 
 select {
   cursor: pointer;
@@ -128,6 +138,9 @@ select:focus {
 }
 .contacts__phone {
   text-align: end;
+}
+.contacts__link {
+  color: #000;
 }
 
 .social {
