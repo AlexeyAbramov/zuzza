@@ -252,6 +252,85 @@ select:focus {
   margin-left: 50px;
 }
 
+.same-products {
+  padding: 60px 0 50px;
+}
+.same-products .content-product__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.same-products .content-product__item {
+  flex: 0 1 30%;
+  box-shadow: 0 1px 9px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.3s;
+  background-color: #fff;
+}
+.same-products .content-product__item:hover {
+  transform: scale(1.02);
+}
+.same-products .content-product__bg {
+  position: relative;
+  cursor: pointer;
+}
+.same-products .content-product__bg::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 32px;
+  height: 32px;
+  right: 20px;
+  bottom: 20px;
+  background-color: red;
+  background: url("../../../../../src/img/main/category-catalog/zoom.png") no-repeat;
+}
+.same-products .content-product .description-product {
+  padding: 0 20px;
+}
+.same-products .content-product .description-product__heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.same-products .content-product .description-product__heading h4 {
+  color: #000;
+  flex: 0 0 auto;
+}
+.same-products .content-product .description-product__title {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: inherit;
+  flex: 0 0 25%;
+  text-align: start;
+}
+.same-products .content-product .description-product__text {
+  text-align: start;
+}
+.same-products .content-product .description-product__text:last-child {
+  align-self: flex-end;
+}
+.same-products .content-product .description-product__price {
+  font-size: inherit;
+}
+.same-products .content-product .description-product__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.same-products .content-product .description-product__item {
+  display: flex;
+}
+.same-products .content-product__button {
+  display: block;
+  width: 39%;
+  margin: 20px auto 0;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
 .feedback {
   position: relative;
   padding: 60px 0;
