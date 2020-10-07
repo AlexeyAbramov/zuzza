@@ -13,39 +13,39 @@
     <div class="wrapper">
         <!--Header-->
         <header class="header">
-            <div class="header">
-                <div class="header__inner _container">
-                    <div class="header__column">
-                        <a href="/index.html"><img src="./src/img/header/logo.png" alt="logo" class="header__logo"></a>
+            <div class="header__inner _container">
+                <div class="header__column">
+                    <a href="/index.html"><img src="./src/img/header/logo.png" alt="logo" class="header__logo"></a>
+                </div>
+                <div class="header__column">
+                    <nav class="header__nav nav">
+                        <ul class="nav-list">
+                            <li class="nav-list__item"><select name="catalog" id="nav-list__catalog">
+                                    <option value="Каталог">Каталог</option>
+                                </select></li>
+                            <li class="nav-list__item"><a href="#delivery" class="nav-list__link">Доставка и
+                                    оплата</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Партнерам</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">О нас</a></li>
+                            <li class="nav-list__item"><a href="#footer" class="nav-list__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__column">
+                    <div class="header__contacts contacts">
+                        <div class="contacts__phone"><a class="contacts__link" href="tel:+37552440663">+375 (00)
+                                000-00-00</a></div>
+                        <ul class="contacts__social social">
+                            <li><a href="#"><img src="./src/img/header/telegram.png" alt="telegram"></a></li>
+                            <li><a href="#"><img src="./src/img/header/viber.png" alt="viber"></a></li>
+                            <li><a href="#"><img src="./src/img/header/whatapp.png" alt="whatapp"></a></li>
+                        </ul>
                     </div>
-                    <div class="header__column">
-                        <nav class="header__nav nav">
-                            <ul class="nav-list">
-                                <li class="nav-list__item"><select name="catalog" id="nav-list__catalog">
-                                        <option value="Каталог">Каталог</option>
-                                    </select></li>
-                                <li class="nav-list__item"><a href="#delivery" class="nav-list__link">Доставка и оплата</a></li>
-                                <li class="nav-list__item"><a href="#" class="nav-list__link">Партнерам</a></li>
-                                <li class="nav-list__item"><a href="#" class="nav-list__link">О нас</a></li>
-                                <li class="nav-list__item"><a href="#footer" class="nav-list__link">Контакты</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="header__column">
-                        <div class="header__contacts contacts">
-                            <div class="contacts__phone"><a class="contacts__link" href="tel:+37552440663">+375 (00) 000-00-00</a></div>
-                            <ul class="contacts__social social">
-                                <li><a href="#"><img src="./src/img/header/telegram.png" alt="telegram"></a></li>
-                                <li><a href="#"><img src="./src/img/header/viber.png" alt="viber"></a></li>
-                                <li><a href="#"><img src="./src/img/header/whatapp.png" alt="whatapp"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="header__column">
-                        <div class="header__cart cart">
-                            <div class="cart__count">0</div>
-                            <a href="#"><img src="./src/img/header/cart.png" alt="cart" class="cart__to"></a>
-                        </div>
+                </div>
+                <div class="header__column">
+                    <div class="header__cart cart">
+                        <div class="cart__count">0</div>
+                        <a href="#"><img src="./src/img/header/cart.png" alt="cart" class="cart__to"></a>
                     </div>
                 </div>
             </div>
@@ -53,499 +53,557 @@
         <!--/Header-->
         <!--Main-->
         <main class="main">
-            <!--Category-catalog-->
-            <section class="category-catalog">
-                <div class="category-catalog-inner _container">
-                    <div class="category-catalog__heading">
-                        <h2 class="category-catalog__title">Каталог</h2>
-                        <p class="category-catalog__text">Текст-«рыба» — это заготовленный, или собственноручно
-                            написанный<br>текст для экономии времени.</p>
+            <div class="main__inner">
+                <!--Category-product-->
+                <section class="category-product">
+                    <div class="category-product__inner _container">
+                        <div class="category-product__heading">
+                            <h2 class="category-product__title">Крем-мед</h2>
+                            <p class="category-product__text">Крем-мёд был придумал в 20-е годы 20 века в Канаде.<br>Он
+                                готовится вымешиванием при определенной температуре смеси жидкого и застывшего мёда с
+                                целью
+                                размельчения кристаллов и придания готовому продукту нежной кремовой текстуры. </p>
+                        </div>
+                        <div class="category-product__features features-product">
+                            <ul class="features-product__list">
+                                <li class="features-product__item">
+                                    <div class="features-product__icon">
+                                        <img class="features-product__figure"
+                                            src="./src/img/main/category-product/1.png" alt="img">
+                                    </div>
+                                    <p class="features-product__text">Не твердеет;</p>
+                                </li>
+                                <li class="features-product__item">
+                                    <div class="features-product__icon">
+                                        <img class="features-product__figure"
+                                            src="./src/img/main/category-product/2.png" alt="img">
+                                    </div>
+                                    <p class="features-product__text">не застывает при низких температурах, сохраняя
+                                        мягкость;</p>
+                                </li>
+                                <li class="features-product__item">
+                                    <div class="features-product__icon">
+                                        <img class="features-product__figure"
+                                            src="./src/img/main/category-product/1.png" alt="img">
+                                    </div>
+                                    <p class="features-product__text">не течёт при комнатной температуре и легко
+                                        намазывается</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="category-catalog__goods goods-catalog">
-                        <ul class="goods-catalog__list">
-                            <li class="goods-catalog__item">
-                                <div class="goods-catalog__bg">
-                                    <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
-                                        alt="1">
-                                </div>
-                                <div class="goods-catalog__description description-product">
-                                    <div class="description-product__heading">
-                                        <h4 class="description-product__title">Фисташка и морская соль </h4>
-                                        <span class="description-product__price">30 р.</span>
+                </section>
+                <!--/Category-product-->
+                <!--Category-catalog-->
+                <section class="category-catalog">
+                    <div class="category-catalog-inner _container">
+                        <div class="category-catalog__heading">
+                            <h2 class="category-catalog__title">Каталог</h2>
+                            <p class="category-catalog__text">Текст-«рыба» — это заготовленный, или собственноручно
+                                написанный<br>текст для экономии времени.</p>
+                        </div>
+                        <div class="category-catalog__goods goods-catalog">
+                            <ul class="goods-catalog__list">
+                                <li class="goods-catalog__item">
+                                    <div class="goods-catalog__bg">
+                                        <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
+                                            alt="1">
                                     </div>
-                                    <ul class="description-product__list">
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Состав:</span>
-                                            <p class="description-product__text">крем-мёд, дроблёная сушеная фисташка,
-                                                морская соль</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Объем:</span>
-                                            <p class="description-product__text">100 мл (150 гр)</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Вес:</span>
-                                            <p class="description-product__text">165 мл</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Срок хранения:</span>
-                                            <p class="description-product__text">12 месяцев</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a class="goods-catalog__button btn" href="#">В корзину</a>
-                            </li>
-                            <li class="goods-catalog__item">
-                                <div class="goods-catalog__bg">
-                                    <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
-                                        alt="1">
-                                </div>
-                                <div class="goods-catalog__description description-product">
-                                    <div class="description-product__heading">
-                                        <h4 class="description-product__title">Фисташка и морская соль </h4>
-                                        <span class="description-product__price">30 р.</span>
+                                    <div class="goods-catalog__description description-product">
+                                        <div class="description-product__heading">
+                                            <h4 class="description-product__title">Фисташка и морская соль </h4>
+                                            <span class="description-product__price">30 р.</span>
+                                        </div>
+                                        <ul class="description-product__list">
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Состав:</span>
+                                                <p class="description-product__text">крем-мёд, дроблёная сушеная
+                                                    фисташка,
+                                                    морская соль</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Объем:</span>
+                                                <p class="description-product__text">100 мл (150 гр)</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Вес:</span>
+                                                <p class="description-product__text">165 мл</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Срок хранения:</span>
+                                                <p class="description-product__text">12 месяцев</p>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul class="description-product__list">
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Состав:</span>
-                                            <p class="description-product__text">крем-мёд, дроблёная сушеная фисташка,
-                                                морская соль</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Объем:</span>
-                                            <p class="description-product__text">100 мл (150 гр)</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Вес:</span>
-                                            <p class="description-product__text">165 мл</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Срок хранения:</span>
-                                            <p class="description-product__text">12 месяцев</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a class="goods-catalog__button btn" href="#">В корзину</a>
-                            </li>
-                            <li class="goods-catalog__item">
-                                <div class="goods-catalog__bg">
-                                    <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
-                                        alt="1">
-                                </div>
-                                <div class="goods-catalog__description description-product">
-                                    <div class="description-product__heading">
-                                        <h4 class="description-product__title">Фисташка и морская соль </h4>
-                                        <span class="description-product__price">30 р.</span>
+                                    <a class="goods-catalog__button btn" href="#">В корзину</a>
+                                </li>
+                                <li class="goods-catalog__item">
+                                    <div class="goods-catalog__bg">
+                                        <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
+                                            alt="1">
                                     </div>
-                                    <ul class="description-product__list">
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Состав:</span>
-                                            <p class="description-product__text">крем-мёд, дроблёная сушеная фисташка,
-                                                морская соль</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Объем:</span>
-                                            <p class="description-product__text">100 мл (150 гр)</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Вес:</span>
-                                            <p class="description-product__text">165 мл</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Срок хранения:</span>
-                                            <p class="description-product__text">12 месяцев</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a class="goods-catalog__button btn" href="#">В корзину</a>
-                            </li>
-                            <li class="goods-catalog__item">
-                                <div class="goods-catalog__bg">
-                                    <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
-                                        alt="1">
-                                </div>
-                                <div class="goods-catalog__description description-product">
-                                    <div class="description-product__heading">
-                                        <h4 class="description-product__title">Фисташка и морская соль </h4>
-                                        <span class="description-product__price">30 р.</span>
+                                    <div class="goods-catalog__description description-product">
+                                        <div class="description-product__heading">
+                                            <h4 class="description-product__title">Фисташка и морская соль </h4>
+                                            <span class="description-product__price">30 р.</span>
+                                        </div>
+                                        <ul class="description-product__list">
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Состав:</span>
+                                                <p class="description-product__text">крем-мёд, дроблёная сушеная
+                                                    фисташка,
+                                                    морская соль</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Объем:</span>
+                                                <p class="description-product__text">100 мл (150 гр)</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Вес:</span>
+                                                <p class="description-product__text">165 мл</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Срок хранения:</span>
+                                                <p class="description-product__text">12 месяцев</p>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul class="description-product__list">
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Состав:</span>
-                                            <p class="description-product__text">крем-мёд, дроблёная сушеная фисташка,
-                                                морская соль</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Объем:</span>
-                                            <p class="description-product__text">100 мл (150 гр)</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Вес:</span>
-                                            <p class="description-product__text">165 мл</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Срок хранения:</span>
-                                            <p class="description-product__text">12 месяцев</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a class="goods-catalog__button btn" href="#">В корзину</a>
-                            </li>
-                            <li class="goods-catalog__item">
-                                <div class="goods-catalog__bg">
-                                    <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
-                                        alt="1">
-                                </div>
-                                <div class="goods-catalog__description description-product">
-                                    <div class="description-product__heading">
-                                        <h4 class="description-product__title">Фисташка и морская соль </h4>
-                                        <span class="description-product__price">30 р.</span>
+                                    <a class="goods-catalog__button btn" href="#">В корзину</a>
+                                </li>
+                                <li class="goods-catalog__item">
+                                    <div class="goods-catalog__bg">
+                                        <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
+                                            alt="1">
                                     </div>
-                                    <ul class="description-product__list">
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Состав:</span>
-                                            <p class="description-product__text">крем-мёд, дроблёная сушеная фисташка,
-                                                морская соль</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Объем:</span>
-                                            <p class="description-product__text">100 мл (150 гр)</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Вес:</span>
-                                            <p class="description-product__text">165 мл</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Срок хранения:</span>
-                                            <p class="description-product__text">12 месяцев</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a class="goods-catalog__button btn" href="#">В корзину</a>
-                            </li>
-                            <li class="goods-catalog__item">
-                                <div class="goods-catalog__bg">
-                                    <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
-                                        alt="1">
-                                </div>
-                                <div class="goods-catalog__description description-product">
-                                    <div class="description-product__heading">
-                                        <h4 class="description-product__title">Фисташка и морская соль </h4>
-                                        <span class="description-product__price">30 р.</span>
+                                    <div class="goods-catalog__description description-product">
+                                        <div class="description-product__heading">
+                                            <h4 class="description-product__title">Фисташка и морская соль </h4>
+                                            <span class="description-product__price">30 р.</span>
+                                        </div>
+                                        <ul class="description-product__list">
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Состав:</span>
+                                                <p class="description-product__text">крем-мёд, дроблёная сушеная
+                                                    фисташка,
+                                                    морская соль</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Объем:</span>
+                                                <p class="description-product__text">100 мл (150 гр)</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Вес:</span>
+                                                <p class="description-product__text">165 мл</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Срок хранения:</span>
+                                                <p class="description-product__text">12 месяцев</p>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul class="description-product__list">
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Состав:</span>
-                                            <p class="description-product__text">крем-мёд, дроблёная сушеная фисташка,
-                                                морская соль</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Объем:</span>
-                                            <p class="description-product__text">100 мл (150 гр)</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Вес:</span>
-                                            <p class="description-product__text">165 мл</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Срок хранения:</span>
-                                            <p class="description-product__text">12 месяцев</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a class="goods-catalog__button btn" href="#">В корзину</a>
-                            </li>
-                            <li class="goods-catalog__item">
-                                <div class="goods-catalog__bg">
-                                    <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
-                                        alt="1">
-                                </div>
-                                <div class="goods-catalog__description description-product">
-                                    <div class="description-product__heading">
-                                        <h4 class="description-product__title">Фисташка и морская соль </h4>
-                                        <span class="description-product__price">30 р.</span>
+                                    <a class="goods-catalog__button btn" href="#">В корзину</a>
+                                </li>
+                                <li class="goods-catalog__item">
+                                    <div class="goods-catalog__bg">
+                                        <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
+                                            alt="1">
                                     </div>
-                                    <ul class="description-product__list">
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Состав:</span>
-                                            <p class="description-product__text">крем-мёд, дроблёная сушеная фисташка,
-                                                морская соль</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Объем:</span>
-                                            <p class="description-product__text">100 мл (150 гр)</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Вес:</span>
-                                            <p class="description-product__text">165 мл</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Срок хранения:</span>
-                                            <p class="description-product__text">12 месяцев</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a class="goods-catalog__button btn" href="#">В корзину</a>
-                            </li>
-                            <li class="goods-catalog__item">
-                                <div class="goods-catalog__bg">
-                                    <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
-                                        alt="1">
-                                </div>
-                                <div class="goods-catalog__description description-product">
-                                    <div class="description-product__heading">
-                                        <h4 class="description-product__title">Фисташка и морская соль </h4>
-                                        <span class="description-product__price">30 р.</span>
+                                    <div class="goods-catalog__description description-product">
+                                        <div class="description-product__heading">
+                                            <h4 class="description-product__title">Фисташка и морская соль </h4>
+                                            <span class="description-product__price">30 р.</span>
+                                        </div>
+                                        <ul class="description-product__list">
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Состав:</span>
+                                                <p class="description-product__text">крем-мёд, дроблёная сушеная
+                                                    фисташка,
+                                                    морская соль</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Объем:</span>
+                                                <p class="description-product__text">100 мл (150 гр)</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Вес:</span>
+                                                <p class="description-product__text">165 мл</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Срок хранения:</span>
+                                                <p class="description-product__text">12 месяцев</p>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul class="description-product__list">
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Состав:</span>
-                                            <p class="description-product__text">крем-мёд, дроблёная сушеная фисташка,
-                                                морская соль</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Объем:</span>
-                                            <p class="description-product__text">100 мл (150 гр)</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Вес:</span>
-                                            <p class="description-product__text">165 мл</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Срок хранения:</span>
-                                            <p class="description-product__text">12 месяцев</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a class="goods-catalog__button btn" href="#">В корзину</a>
-                            </li>
-                            <li class="goods-catalog__item">
-                                <div class="goods-catalog__bg">
-                                    <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
-                                        alt="1">
-                                </div>
-                                <div class="goods-catalog__description description-product">
-                                    <div class="description-product__heading">
-                                        <h4 class="description-product__title">Фисташка и морская соль </h4>
-                                        <span class="description-product__price">30 р.</span>
+                                    <a class="goods-catalog__button btn" href="#">В корзину</a>
+                                </li>
+                                <li class="goods-catalog__item">
+                                    <div class="goods-catalog__bg">
+                                        <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
+                                            alt="1">
                                     </div>
-                                    <ul class="description-product__list">
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Состав:</span>
-                                            <p class="description-product__text">крем-мёд, дроблёная сушеная фисташка,
-                                                морская соль</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Объем:</span>
-                                            <p class="description-product__text">100 мл (150 гр)</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Вес:</span>
-                                            <p class="description-product__text">165 мл</p>
-                                        </li>
-                                        <li class="description-product__item">
-                                            <span class="description-product__title">Срок хранения:</span>
-                                            <p class="description-product__text">12 месяцев</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a class="goods-catalog__button btn" href="#">В корзину</a>
-                            </li>
-                        </ul>
+                                    <div class="goods-catalog__description description-product">
+                                        <div class="description-product__heading">
+                                            <h4 class="description-product__title">Фисташка и морская соль </h4>
+                                            <span class="description-product__price">30 р.</span>
+                                        </div>
+                                        <ul class="description-product__list">
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Состав:</span>
+                                                <p class="description-product__text">крем-мёд, дроблёная сушеная
+                                                    фисташка,
+                                                    морская соль</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Объем:</span>
+                                                <p class="description-product__text">100 мл (150 гр)</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Вес:</span>
+                                                <p class="description-product__text">165 мл</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Срок хранения:</span>
+                                                <p class="description-product__text">12 месяцев</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="goods-catalog__button btn" href="#">В корзину</a>
+                                </li>
+                                <li class="goods-catalog__item">
+                                    <div class="goods-catalog__bg">
+                                        <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
+                                            alt="1">
+                                    </div>
+                                    <div class="goods-catalog__description description-product">
+                                        <div class="description-product__heading">
+                                            <h4 class="description-product__title">Фисташка и морская соль </h4>
+                                            <span class="description-product__price">30 р.</span>
+                                        </div>
+                                        <ul class="description-product__list">
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Состав:</span>
+                                                <p class="description-product__text">крем-мёд, дроблёная сушеная
+                                                    фисташка,
+                                                    морская соль</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Объем:</span>
+                                                <p class="description-product__text">100 мл (150 гр)</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Вес:</span>
+                                                <p class="description-product__text">165 мл</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Срок хранения:</span>
+                                                <p class="description-product__text">12 месяцев</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="goods-catalog__button btn" href="#">В корзину</a>
+                                </li>
+                                <li class="goods-catalog__item">
+                                    <div class="goods-catalog__bg">
+                                        <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
+                                            alt="1">
+                                    </div>
+                                    <div class="goods-catalog__description description-product">
+                                        <div class="description-product__heading">
+                                            <h4 class="description-product__title">Фисташка и морская соль </h4>
+                                            <span class="description-product__price">30 р.</span>
+                                        </div>
+                                        <ul class="description-product__list">
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Состав:</span>
+                                                <p class="description-product__text">крем-мёд, дроблёная сушеная
+                                                    фисташка,
+                                                    морская соль</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Объем:</span>
+                                                <p class="description-product__text">100 мл (150 гр)</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Вес:</span>
+                                                <p class="description-product__text">165 мл</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Срок хранения:</span>
+                                                <p class="description-product__text">12 месяцев</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="goods-catalog__button btn" href="#">В корзину</a>
+                                </li>
+                                <li class="goods-catalog__item">
+                                    <div class="goods-catalog__bg">
+                                        <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
+                                            alt="1">
+                                    </div>
+                                    <div class="goods-catalog__description description-product">
+                                        <div class="description-product__heading">
+                                            <h4 class="description-product__title">Фисташка и морская соль </h4>
+                                            <span class="description-product__price">30 р.</span>
+                                        </div>
+                                        <ul class="description-product__list">
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Состав:</span>
+                                                <p class="description-product__text">крем-мёд, дроблёная сушеная
+                                                    фисташка,
+                                                    морская соль</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Объем:</span>
+                                                <p class="description-product__text">100 мл (150 гр)</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Вес:</span>
+                                                <p class="description-product__text">165 мл</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Срок хранения:</span>
+                                                <p class="description-product__text">12 месяцев</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="goods-catalog__button btn" href="#">В корзину</a>
+                                </li>
+                                <li class="goods-catalog__item">
+                                    <div class="goods-catalog__bg">
+                                        <img class="goods-catalog__icon" src="./src/img/main/category-catalog/1.png"
+                                            alt="1">
+                                    </div>
+                                    <div class="goods-catalog__description description-product">
+                                        <div class="description-product__heading">
+                                            <h4 class="description-product__title">Фисташка и морская соль </h4>
+                                            <span class="description-product__price">30 р.</span>
+                                        </div>
+                                        <ul class="description-product__list">
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Состав:</span>
+                                                <p class="description-product__text">крем-мёд, дроблёная сушеная
+                                                    фисташка,
+                                                    морская соль</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Объем:</span>
+                                                <p class="description-product__text">100 мл (150 гр)</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Вес:</span>
+                                                <p class="description-product__text">165 мл</p>
+                                            </li>
+                                            <li class="description-product__item">
+                                                <span class="description-product__title">Срок хранения:</span>
+                                                <p class="description-product__text">12 месяцев</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a class="goods-catalog__button btn" href="#">В корзину</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <!--/Category-catalog-->
-            <!--Delivery-->
-            <section class="delivery" id="delivery">
-                <div class="delivery__inner _container">
-                    <div class="delivery__heading">
-                        <h2 class="delivery__title">Доставка и оплата</h2>
-                    </div>
-                    <div class="delivery__features features-delivery">
-                        <ul class="features-delivery__list">
-                            <li class="features-delivery__item">
-                                <div class="features-delivery__logo">
-                                    <img src="./src/img/main/delivery/phone.png" alt="phone">
-                                </div>
-                                <div class="features-delivery__content">
-                                    <h4 class="features-delivery__title">Заказ</h4>
-                                    <p class="features-delivery__text">Наш менеджер свяжется с вами, чтобы обговорить
-                                        детали, такие как удобное время доставки и предпочитаемая продукция</p>
-                                </div>
-                            </li>
-                            <li class="features-delivery__item">
-                                <div class="features-delivery__logo">
-                                    <img src="./src/img/main/delivery/cart.png" alt="cart">
-                                </div>
-                                <div class="features-delivery__content">
-                                    <h4 class="features-delivery__title">Оплата</h4>
-                                    <p class="features-delivery__text">Вы сами выбираете удобный способ оплаты. Оплатить
-                                        можно по карте или наличными курьеры</p>
-                                </div>
-                            </li>
-                            <li class="features-delivery__item">
-                                <div class="features-delivery__logo">
-                                    <img src="./src/img/main/delivery/cart.png" alt="cart">
-                                </div>
-                                <div class="features-delivery__content">
-                                    <h4 class="features-delivery__title">Удобная доставка</h4>
-                                    <p class="features-delivery__text">Выбирайте любой способ доставки: стандартную,
-                                        срочную доставку или самовызов. Доставка осуществялется на территории всей
-                                        Беларуси</p>
+                </section>
+                <!--/Category-catalog-->
+                <!--Delivery-->
+                <section class="delivery" id="delivery">
+                    <div class="delivery__inner _container">
+                        <div class="delivery__heading">
+                            <h2 class="delivery__title">Доставка и оплата</h2>
+                        </div>
+                        <div class="delivery__features features-delivery">
+                            <ul class="features-delivery__list">
+                                <li class="features-delivery__item">
+                                    <div class="features-delivery__logo">
+                                        <img src="./src/img/main/delivery/phone.png" alt="phone">
+                                    </div>
+                                    <div class="features-delivery__content">
+                                        <h4 class="features-delivery__title">Заказ</h4>
+                                        <p class="features-delivery__text">Наш менеджер свяжется с вами, чтобы
+                                            обговорить
+                                            детали, такие как удобное время доставки и предпочитаемая продукция</p>
+                                    </div>
+                                </li>
+                                <li class="features-delivery__item">
+                                    <div class="features-delivery__logo">
+                                        <img src="./src/img/main/delivery/cart.png" alt="cart">
+                                    </div>
+                                    <div class="features-delivery__content">
+                                        <h4 class="features-delivery__title">Оплата</h4>
+                                        <p class="features-delivery__text">Вы сами выбираете удобный способ оплаты.
+                                            Оплатить
+                                            можно по карте или наличными курьеры</p>
+                                    </div>
+                                </li>
+                                <li class="features-delivery__item">
+                                    <div class="features-delivery__logo">
+                                        <img src="./src/img/main/delivery/cart.png" alt="cart">
+                                    </div>
+                                    <div class="features-delivery__content">
+                                        <h4 class="features-delivery__title">Удобная доставка</h4>
+                                        <p class="features-delivery__text">Выбирайте любой способ доставки: стандартную,
+                                            срочную доставку или самовызов. Доставка осуществялется на территории всей
+                                            Беларуси</p>
                                         <a href="#" class="features-delivery__link">Подробнее</a>
+                                    </div>
+                                </li>
+                                <li class="features-delivery__item">
+                                    <div class="features-delivery__logo">
+                                        <img src="./src/img/main/delivery/present.png" alt="present">
+                                    </div>
+                                    <div class="features-delivery__content">
+                                        <h4 class="features-delivery__title">Подарки</h4>
+                                        <p class="features-delivery__text">Вы любите наш мед, а мы дарим вам подарки</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!--/Delivery-->
+                <!--Feedback-->
+                <section class="feedback">
+                    <div class="feedback__inner _container">
+                        <div class="feedback__heading">
+                            <h2 class="feedback__title">Отзывы</h2>
+                        </div>
+                        <ul class="feedback__list list-feedback">
+                            <li class="list-feedback__item">
+                                <div class="wrapper_item">
+                                    <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
+                                        class="list-feedback__bg">
+                                    <div class="list-feedback__content">
+                                        <h4 class="list-feedback__title">Имя Фамилия</h4>
+                                        <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный
+                                            или
+                                            собственноручно написанный текст</p>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="features-delivery__item">
-                                <div class="features-delivery__logo">
-                                    <img src="./src/img/main/delivery/present.png" alt="present">
+                            <li class="list-feedback__item">
+                                <div class="wrapper_item">
+                                    <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
+                                        class="list-feedback__bg">
+                                    <div class="list-feedback__content">
+                                        <h4 class="list-feedback__title">Имя Фамилия</h4>
+                                        <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный
+                                            или
+                                            собственноручно написанный текст</p>
+                                    </div>
                                 </div>
-                                <div class="features-delivery__content">
-                                    <h4 class="features-delivery__title">Подарки</h4>
-                                    <p class="features-delivery__text">Вы любите наш мед, а мы дарим вам подарки</p>
+                            </li>
+                            <li class="list-feedback__item">
+                                <div class="wrapper_item">
+                                    <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
+                                        class="list-feedback__bg">
+                                    <div class="list-feedback__content">
+                                        <h4 class="list-feedback__title">Имя Фамилия</h4>
+                                        <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный
+                                            или
+                                            собственноручно написанный текст</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-feedback__item">
+                                <div class="wrapper_item">
+                                    <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
+                                        class="list-feedback__bg">
+                                    <div class="list-feedback__content">
+                                        <h4 class="list-feedback__title">Имя Фамилия</h4>
+                                        <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный
+                                            или
+                                            собственноручно написанный текст</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-feedback__item">
+                                <div class="wrapper_item">
+                                    <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
+                                        class="list-feedback__bg">
+                                    <div class="list-feedback__content">
+                                        <h4 class="list-feedback__title">Имя Фамилия</h4>
+                                        <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный
+                                            или
+                                            собственноручно написанный текст</p>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </section>
-            <!--/Delivery-->
-            <!--Feedback-->
-            <section class="feedback">
-                <div class="feedback__inner _container">
-                    <div class="feedback__heading">
-                        <h2 class="feedback__title">Отзывы</h2>
-                    </div>
-                    <ul class="feedback__list list-feedback">
-                        <li class="list-feedback__item">
-                            <div class="wrapper_item">
-                                <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
-                                    class="list-feedback__bg">
-                                <div class="list-feedback__content">
-                                    <h4 class="list-feedback__title">Имя Фамилия</h4>
-                                    <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный или
-                                        собственноручно написанный текст</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-feedback__item">
-                            <div class="wrapper_item">
-                                <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
-                                    class="list-feedback__bg">
-                                <div class="list-feedback__content">
-                                    <h4 class="list-feedback__title">Имя Фамилия</h4>
-                                    <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный или
-                                        собственноручно написанный текст</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-feedback__item">
-                            <div class="wrapper_item">
-                                <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
-                                    class="list-feedback__bg">
-                                <div class="list-feedback__content">
-                                    <h4 class="list-feedback__title">Имя Фамилия</h4>
-                                    <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный или
-                                        собственноручно написанный текст</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-feedback__item">
-                            <div class="wrapper_item">
-                                <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
-                                    class="list-feedback__bg">
-                                <div class="list-feedback__content">
-                                    <h4 class="list-feedback__title">Имя Фамилия</h4>
-                                    <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный или
-                                        собственноручно написанный текст</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-feedback__item">
-                            <div class="wrapper_item">
-                                <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
-                                    class="list-feedback__bg">
-                                <div class="list-feedback__content">
-                                    <h4 class="list-feedback__title">Имя Фамилия</h4>
-                                    <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный или
-                                        собственноручно написанный текст</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!--/Feedback-->
-            <!--Recipes-->
-            <section class="recipes">
-                <div class="recipes__inner _container">
-                    <div class="recipes__heading">
-                        <h2 class="recipes__title">Полезные статьи и рецепты</h2>
-                    </div>
-                    <div class="recipes__content content-recipes">
-                        <ul class="content-recipes__list">
-                            <li class="content-recipes__item">
-                                <div class="content-recipes__picture">
-                                    <img src="./src/img/main/recipes/recipes-bg.png" alt="recipes__bg">
-                                    <span class="content-recipes__category">Статьи</span>
-                                </div>
-                                <div class="content-recipes__heading">
-                                    <h3 class="content-recipes__title">Как выбрать мед?</h3>
-                                    <span class="content-recipes__date">Май 20, 2020</span>
-                                </div>
-                            </li>
-                            <li class="content-recipes__item">
-                                <div class="content-recipes__picture">
-                                    <img src="./src/img/main/recipes/recipes-bg.png" alt="recipes__bg">
-                                    <span class="content-recipes__category">Рецепты</span>
-                                </div>
-                                <div class="content-recipes__heading">
-                                    <h3 class="content-recipes__title">Медовая кухня</h3>
-                                    <span class="content-recipes__date">Май 20, 2020</span>
-                                </div>
-                            </li>
-                            <li class="content-recipes__item">
-                                <div class="content-recipes__picture">
-                                    <img src="./src/img/main/recipes/recipes-bg.png" alt="recipes__bg">
-                                    <span class="content-recipes__category">Статьи</span>
-                                </div>
-                                <div class="content-recipes__heading">
-                                    <h3 class="content-recipes__title">Греть или не греть?</h3>
-                                    <span class="content-recipes__date">Май 20, 2020</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!--/Recipes-->
-            <!--Subscribe-->
-            <section class="subscribe">
-                <div class="subscribe__inner _container">
-                    <div class="subscribe__heading">
-                        <h3 class="subscribe__title">Подписка на рассылку</h3>
-                        <p class="subscribe__text">Получаете рассылку об акциях на телефон или вайбер</p>
-                    </div>
-                    <form class="subscribe__form form-subscribe" method="POST">
-                        <div class="input-wrapper">
-                            <img src="./src/img/main/subscribe/user.png" alt="subscribe__user"
-                                class="input-subscribe__user">
-                            <input class="form-subscribe__input form-subscribe__input_name" type="text"
-                                placeholder="Ваше имя" name="name">
+                </section>
+                <!--/Feedback-->
+                <!--Recipes-->
+                <section class="recipes">
+                    <div class="recipes__inner _container">
+                        <div class="recipes__heading">
+                            <h2 class="recipes__title">Полезные статьи и рецепты</h2>
                         </div>
-                        <div class="input-wrapper">
-                            <img src="./src/img/main/subscribe/phone.png" alt="subscribe__phone"
-                                class="input-subscribe__user">
-                            <input class="form-subscribe__input form-subscribe__input_phone" type="tel"
-                                placeholder="+375 (00) 000 00 00" name="phone">
+                        <div class="recipes__content content-recipes">
+                            <ul class="content-recipes__list">
+                                <li class="content-recipes__item">
+                                    <div class="content-recipes__picture">
+                                        <img src="./src/img/main/recipes/recipes-bg.png" alt="recipes__bg">
+                                        <span class="content-recipes__category">Статьи</span>
+                                    </div>
+                                    <div class="content-recipes__heading">
+                                        <h3 class="content-recipes__title">Как выбрать мед?</h3>
+                                        <span class="content-recipes__date">Май 20, 2020</span>
+                                    </div>
+                                </li>
+                                <li class="content-recipes__item">
+                                    <div class="content-recipes__picture">
+                                        <img src="./src/img/main/recipes/recipes-bg.png" alt="recipes__bg">
+                                        <span class="content-recipes__category">Рецепты</span>
+                                    </div>
+                                    <div class="content-recipes__heading">
+                                        <h3 class="content-recipes__title">Медовая кухня</h3>
+                                        <span class="content-recipes__date">Май 20, 2020</span>
+                                    </div>
+                                </li>
+                                <li class="content-recipes__item">
+                                    <div class="content-recipes__picture">
+                                        <img src="./src/img/main/recipes/recipes-bg.png" alt="recipes__bg">
+                                        <span class="content-recipes__category">Статьи</span>
+                                    </div>
+                                    <div class="content-recipes__heading">
+                                        <h3 class="content-recipes__title">Греть или не греть?</h3>
+                                        <span class="content-recipes__date">Май 20, 2020</span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                </section>
+                <!--/Recipes-->
+                <!--Subscribe-->
+                <section class="subscribe">
+                    <div class="subscribe__inner _container">
+                        <div class="subscribe__heading">
+                            <h3 class="subscribe__title">Подписка на рассылку</h3>
+                            <p class="subscribe__text">Получаете рассылку об акциях на телефон или вайбер</p>
+                        </div>
+                        <form class="subscribe__form form-subscribe" method="POST">
+                            <div class="input-wrapper">
+                                <img src="./src/img/main/subscribe/user.png" alt="subscribe__user"
+                                    class="input-subscribe__user">
+                                <input class="form-subscribe__input form-subscribe__input_name" type="text"
+                                    placeholder="Ваше имя" name="name">
+                            </div>
+                            <div class="input-wrapper">
+                                <img src="./src/img/main/subscribe/phone.png" alt="subscribe__phone"
+                                    class="input-subscribe__user">
+                                <input class="form-subscribe__input form-subscribe__input_phone" type="tel"
+                                    placeholder="+375 (00) 000 00 00" name="phone">
+                            </div>
 
-                        <input class="form-subscribe__input form-subscribe__input_button" type="submit"
-                            value="Подписаться">
-                    </form>
-                </div>
-            </section>
-            <!--/Subscribe-->
+                            <input class="form-subscribe__input form-subscribe__input_button" type="submit"
+                                value="Подписаться">
+                        </form>
+                    </div>
+                </section>
+                <!--/Subscribe-->
+            </div>
         </main>
         <!--/Main-->
         <!--Footer-->
