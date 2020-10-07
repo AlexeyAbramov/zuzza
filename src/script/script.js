@@ -1,4 +1,15 @@
 $(document).ready(function () {
+  $("#minus").on("click", function () {
+      $input = $(this).parent().find('input');
+      let cnt = parseInt($input.val());
+      cnt = cnt < 1 ? 0 : cnt-1;
+      $input.val(cnt);
+  });
+  $("#plus").on("click", function () {
+    $input = $(this).parent().find('input');
+    let cnt = parseInt($input.val())+1;
+    $input.val(cnt);
+  });
   $(".about-slider").slick({
     infinite: true,
     fade: true,
@@ -11,7 +22,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 3,
     infinite: true,
-    pauseOnFocus: false,   
+    pauseOnFocus: false,
     prevArrow: '<div class="feedback__arrow arrow_left"></div>',
     nextArrow: '<div class="feedback__arrow arrow_right"></div>',
   });

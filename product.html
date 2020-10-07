@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/./styles/css/product.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Zuzza</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Header-->
+        <header class="header">
+            <div class="header__inner _container">
+                <div class="header__column">
+                    <a href="/index.html"><img src="./src/img/header/logo.png" alt="logo" class="header__logo"></a>
+                </div>
+                <div class="header__column">
+                    <nav class="header__nav nav">
+                        <ul class="nav-list">
+                            <li class="nav-list__item"><select name="catalog" id="nav-list__catalog">
+                                    <option value="Каталог">Каталог</option>
+                                </select></li>
+                            <li class="nav-list__item"><a href="#delivery" class="nav-list__link">Доставка и
+                                    оплата</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Партнерам</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">О нас</a></li>
+                            <li class="nav-list__item"><a href="#footer" class="nav-list__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__column">
+                    <div class="header__contacts contacts">
+                        <div class="contacts__phone"><a class="contacts__link" href="tel:+37552440663">+375 (00)
+                                000-00-00</a></div>
+                        <ul class="contacts__social social">
+                            <li><a href="#"><img src="./src/img/header/telegram.png" alt="telegram"></a></li>
+                            <li><a href="#"><img src="./src/img/header/viber.png" alt="viber"></a></li>
+                            <li><a href="#"><img src="./src/img/header/whatapp.png" alt="whatapp"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__column">
+                    <div class="header__cart cart">
+                        <div class="cart__count">0</div>
+                        <a href="#"><img src="./src/img/header/cart.png" alt="cart" class="cart__to"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--/Header-->
+        <!--Main-->
+        <main class="main">
+            <div class="main__inner">
+                <!--Product-cart-->
+                <section class="product-cart">
+                    <div class="product-cart__inner _container">
+                        <div class="product-cart__img">
+                            <img class="product-cart__logo" src="./src/img/main/product/honey.png" alt="honey">
+                        </div>
+                        <div class="product-cart__content">
+                            <div class="product-cart__heading">
+                                <span class="product-cart__category">Крем-мед</span>
+                                <h3 class="product-cart__title">Фисташка и морская соль</h3>
+                                <span class="product-cart__price">30 р.</span>
+                            </div>
+                            <div class="product-cart__description description-cart">
+                                <ul class="description-cart__list">
+                                    <li class="description-cart__item">
+                                        <h4 class="description-cart__title">Вкус:</h4>
+                                        <p class="description-cart__text">Умеренно сладкий.
+                                            Орехово-сливочный с тонким едва уловимым солёным послевкусием.
+                                        </p>
+                                    </li>
+                                    <li class="description-cart__item">
+                                        <h4 class="description-cart__title">Вкус:</h4>
+                                        <p class="description-cart__text">крем-мёд, дроблёная сушеная фисташка, морская
+                                            соль
+                                        </p>
+                                    </li>
+                                    <li class="description-cart__item">
+                                        <h4 class="description-cart__title">Вариант сервировки:</h4>
+                                        <p class="description-cart__text">Со сливочным сыром маскарпоне, свежим хлебом,
+                                            ягодами малины</p>
+                                    </li>
+                                    <li class="description-cart__item">
+                                        <h4 class="description-cart__title">Объем:</h4>
+                                        <p class="description-cart__text">100 мл (150гр)</p>
+                                    </li>
+                                    <li class="description-cart__item">
+                                        <h4 class="description-cart__title">Вес:</h4>
+                                        <p class="description-cart__text">165 мл</p>
+                                    </li>
+                                    <li class="description-cart__item">
+                                        <h4 class="description-cart__title">Срок хранения:</h4>
+                                        <p class="description-cart__text">1 год</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product-cart__buy buy-product">
+                                <div class="buy-product__count">
+                                    <span class="buy-product__minus" id="minus">-</span>
+                                    <input class="buy-product__quantity" id="quantity" type="number" value="1" readonly=''>
+                                    <span class="buy-product__plus" id="plus">+</span>
+                                </div>
+                                <div class="buy-product__button">
+                                    <a class="buy-product__add btn" href="#">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/Product-cart-->
+                <!--Feedback-->
+                <section class="feedback">
+                    <div class="feedback__inner _container">
+                        <div class="feedback__heading">
+                            <h2 class="feedback__title">Отзывы</h2>
+                        </div>
+                        <ul class="feedback__list list-feedback">
+                            <li class="list-feedback__item">
+                                <div class="wrapper_item">
+                                    <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
+                                        class="list-feedback__bg">
+                                    <div class="list-feedback__content">
+                                        <h4 class="list-feedback__title">Имя Фамилия</h4>
+                                        <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный
+                                            или
+                                            собственноручно написанный текст</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-feedback__item">
+                                <div class="wrapper_item">
+                                    <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
+                                        class="list-feedback__bg">
+                                    <div class="list-feedback__content">
+                                        <h4 class="list-feedback__title">Имя Фамилия</h4>
+                                        <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный
+                                            или
+                                            собственноручно написанный текст</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-feedback__item">
+                                <div class="wrapper_item">
+                                    <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
+                                        class="list-feedback__bg">
+                                    <div class="list-feedback__content">
+                                        <h4 class="list-feedback__title">Имя Фамилия</h4>
+                                        <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный
+                                            или
+                                            собственноручно написанный текст</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-feedback__item">
+                                <div class="wrapper_item">
+                                    <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
+                                        class="list-feedback__bg">
+                                    <div class="list-feedback__content">
+                                        <h4 class="list-feedback__title">Имя Фамилия</h4>
+                                        <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный
+                                            или
+                                            собственноручно написанный текст</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-feedback__item">
+                                <div class="wrapper_item">
+                                    <img src="./src/img/main/feedback/feedback.png" alt="feedback__bg"
+                                        class="list-feedback__bg">
+                                    <div class="list-feedback__content">
+                                        <h4 class="list-feedback__title">Имя Фамилия</h4>
+                                        <p class="list-feedback__text">Текст-«рыба» — это заготовленный, скопированный
+                                            или
+                                            собственноручно написанный текст</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!--/Feedback-->
+                <!--Recipes-->
+                <section class="recipes">
+                    <div class="recipes__inner _container">
+                        <div class="recipes__heading">
+                            <h2 class="recipes__title">Полезные статьи и рецепты</h2>
+                        </div>
+                        <div class="recipes__content content-recipes">
+                            <ul class="content-recipes__list">
+                                <li class="content-recipes__item">
+                                    <div class="content-recipes__picture">
+                                        <img src="./src/img/main/recipes/recipes-bg.png" alt="recipes__bg">
+                                        <span class="content-recipes__category">Статьи</span>
+                                    </div>
+                                    <div class="content-recipes__heading">
+                                        <h3 class="content-recipes__title">Как выбрать мед?</h3>
+                                        <span class="content-recipes__date">Май 20, 2020</span>
+                                    </div>
+                                </li>
+                                <li class="content-recipes__item">
+                                    <div class="content-recipes__picture">
+                                        <img src="./src/img/main/recipes/recipes-bg.png" alt="recipes__bg">
+                                        <span class="content-recipes__category">Рецепты</span>
+                                    </div>
+                                    <div class="content-recipes__heading">
+                                        <h3 class="content-recipes__title">Медовая кухня</h3>
+                                        <span class="content-recipes__date">Май 20, 2020</span>
+                                    </div>
+                                </li>
+                                <li class="content-recipes__item">
+                                    <div class="content-recipes__picture">
+                                        <img src="./src/img/main/recipes/recipes-bg.png" alt="recipes__bg">
+                                        <span class="content-recipes__category">Статьи</span>
+                                    </div>
+                                    <div class="content-recipes__heading">
+                                        <h3 class="content-recipes__title">Греть или не греть?</h3>
+                                        <span class="content-recipes__date">Май 20, 2020</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!--/Recipes-->
+                <!--Subscribe-->
+                <section class="subscribe">
+                    <div class="subscribe__inner _container">
+                        <div class="subscribe__heading">
+                            <h3 class="subscribe__title">Подписка на рассылку</h3>
+                            <p class="subscribe__text">Получаете рассылку об акциях на телефон или вайбер</p>
+                        </div>
+                        <form class="subscribe__form form-subscribe" method="POST">
+                            <div class="input-wrapper">
+                                <img src="./src/img/main/subscribe/user.png" alt="subscribe__user"
+                                    class="input-subscribe__user">
+                                <input class="form-subscribe__input form-subscribe__input_name" type="text"
+                                    placeholder="Ваше имя" name="name">
+                            </div>
+                            <div class="input-wrapper">
+                                <img src="./src/img/main/subscribe/phone.png" alt="subscribe__phone"
+                                    class="input-subscribe__user">
+                                <input class="form-subscribe__input form-subscribe__input_phone" type="tel"
+                                    placeholder="+375 (00) 000 00 00" name="phone">
+                            </div>
+
+                            <input class="form-subscribe__input form-subscribe__input_button" type="submit"
+                                value="Подписаться">
+                        </form>
+                    </div>
+                </section>
+                <!--/Subscribe-->
+            </div>
+        </main>
+        <!--/Main-->
+        <!--Footer-->
+        <footer class="footer" id="footer">
+            <div class="footer__inner _container">
+                <div class="footer-top">
+                    <div class="footer-top__column">
+                        <ul class="footer-top__category category-footer">
+                            <li class="category-footer__item"><a class="category-footer__link" href="#">Мед
+                                    классический</a></li>
+                            <li class="category-footer__item"><a class="category-footer__link" href="#">Крем-мед</a>
+                            </li>
+                            <li class="category-footer__item"><a class="category-footer__link" href="#">Подарочные
+                                    наборы</a></li>
+                            <li class="category-footer__item"><a class="category-footer__link" href="#">Продукты
+                                    пчеловодства</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-top__column">
+                        <nav class="footer-top__nav nav-footer">
+                            <ul class="nav-footer__list">
+                                <li class="nav-footer__item"><a class="nav-footer__link" href="#">О нас</a></li>
+                                <li class="nav-footer__item"><a class="nav-footer__link" href="#">Отзывы</a>
+                                </li>
+                                <li class="nav-footer__item"><a class="nav-footer__link" href="#">Акции</a></li>
+                                <li class="nav-footer__item"><a class="nav-footer__link" href="#">Полезные
+                                        статьи</a></li>
+                                <li class="nav-footer__item"><a class="nav-footer__link" href="#">Доставка</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-top__column">
+                        <div class="footer-top__heading">
+                            <h3 class="footer-top__title">Контакты</h3>
+                        </div>
+                        <ul class="footer-top__contacts contacts-footer">
+                            <li class="contacts-footer__item">
+                                <img class="contacts-footer__icon" src="./src/img/footer/phone.png" alt="footer__phone">
+                                <a class="contacts-footer__link" href="tel:375290000000">+375 (29) 000-00-00</a>
+                            </li>
+                            <li class="contacts-footer__item">
+                                <img class="contacts-footer__icon" src="./src/img/footer/mail.png" alt="footer__mail">
+                                <a class="contacts-footer__link"
+                                    href="mailto:your.email@mail.com">your.emal@mail.com</a>
+                            </li>
+                            <li class="contacts-footer__item">
+                                <img class="contacts-footer__icon" src="./src/img/footer/geo.png" alt="footer__geo">
+                                <a class="contacts-footer__link" href="#">Your.address. st number</a>
+                            </li>
+                            <li class="contacts-footer__item">
+                                <a href="#" class="contacts-footer__item">
+                                    <img class="contacts-footer__icon" src="./src/img/footer/earth.png"
+                                        alt="footer__earth">
+                                </a>
+                                <a href="#" class="contacts-footer__item"></a>
+                                <a href="#" class="contacts-footer__item"> </a>
+                                <a href="#" class="contacts-footer__item"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-bottom__text">© ZUZZA 2020. Заполняя формы связи на сайте, Вы даете согласие на
+                        обрабоку персональных
+                        данных в соответствии с данной политикой конфиденциальности.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!--/Footer-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./src/script/script.js"></script>
+</body>
+
+</html>
