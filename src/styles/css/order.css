@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@font-face {
+  font-family: "Reef";
+  src: url("../../font/Reef-Bold.woff2") format("woff2"), url("../../font/Reef-Bold.woff") format("woff");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Reef", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  color: #000;
+  background-color: #FFC700;
+  padding: 12px 0 13px;
+  border: none;
+  position: relative;
+  font-size: 20px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+.btn::before {
+  height: 42px;
+  width: 42px;
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  background-color: #FFC700;
+  transform: rotate(45deg);
+  top: 5px;
+  left: -21px;
+}
+.btn::after {
+  height: 42px;
+  width: 42px;
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  background-color: #FFC700;
+  right: -21px;
+  bottom: 5px;
+}
+
+.header {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+.header__inner {
+  height: 133px;
+  display: flex;
+  align-items: center;
+}
+.header__column {
+  flex: 1 1 auto;
+}
+.header__cart {
+  text-align: end;
+  position: relative;
+}
+.header__cart .cart__count {
+  position: absolute;
+  display: block;
+  content: "";
+  top: -3px;
+  right: -9px;
+  width: 17px;
+  height: 17px;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list__link {
+  color: #000;
+}
+
+select {
+  cursor: pointer;
+}
+
+select,
+select:focus {
+  border: none;
+}
+
+.contacts {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  min-height: 64px;
+}
+.contacts__phone {
+  text-align: end;
+}
+.contacts__link {
+  color: #000;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+.social li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header {
+  background-color: #f9f9f9;
+}
+
+main .order {
+  padding-top: 60px;
+}
+main .order__inner * {
+  font-family: Montserrat, sans-serif;
+}
+main .order__inner {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 800px;
+}
+main .how {
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .how .content-how__list {
+  list-style-position: inside;
+  counter-reset: myCounter;
+}
+main .how .content-how__item {
+  line-height: 30px;
+}
+main .how .content-how__item::before {
+  counter-increment: myCounter;
+  content: counter(myCounter) ".";
+  font-weight: 600;
+  color: #FFC700;
+  display: inline-block;
+  width: 25px;
+}
+main .payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+}
+main .payment .content-payment__list {
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .payment .content-payment__item::before {
+  content: "•";
+  font-weight: 600;
+  color: #FFC700;
+  display: inline-block;
+  text-align: center;
+  font-size: 23px;
+  width: 25px;
+}
+main .delivery {
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .delivery .content-delivery__list {
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .delivery .content-delivery__item::before {
+  content: "•";
+  font-weight: 600;
+  color: #FFC700;
+  display: inline-block;
+  text-align: center;
+  font-size: 23px;
+  width: 25px;
+}
+main .info__link {
+  color: #000;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=order.css.map */
