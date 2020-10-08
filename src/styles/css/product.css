@@ -256,22 +256,29 @@ select:focus {
   padding: 60px 0 50px;
 }
 .same-products .content-product__list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 10px;
 }
+.same-products .content-product__wrapper {
+  box-shadow: 0 1px 9px 4px rgba(0, 0, 0, 0.05);
+  padding-bottom: 20px;
+}
 .same-products .content-product__item {
   flex: 0 1 30%;
-  box-shadow: 0 1px 9px 4px rgba(0, 0, 0, 0.05);
+  padding: 10px;
   border-radius: 10px;
   margin-top: 20px;
-  padding-bottom: 20px;
   transition: 0.3s;
   background-color: #fff;
 }
 .same-products .content-product__item:hover {
   transform: scale(1.02);
+}
+.same-products .content-product__item:focus {
+  outline: none;
 }
 .same-products .content-product__bg {
   position: relative;
@@ -287,6 +294,28 @@ select:focus {
   bottom: 20px;
   background-color: red;
   background: url("../../../../../src/img/main/category-catalog/zoom.png") no-repeat;
+}
+.same-products .content-product__icon {
+  width: 100%;
+}
+.same-products .content-product__arrow {
+  cursor: pointer;
+  width: 64px;
+  height: 56px;
+  background: url("../../../../../src/img/main/same-products/arrow.png") no-repeat center center;
+  position: absolute;
+  top: 44%;
+  transition: 1s;
+}
+.same-products .content-product__arrow:hover {
+  transform: scale(1.2);
+}
+.same-products .content-product__arrow.arrow_left {
+  transform: scale(-1);
+  left: -72px;
+}
+.same-products .content-product__arrow.arrow_right {
+  right: -72px;
 }
 .same-products .content-product .description-product {
   padding: 0 20px;

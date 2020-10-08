@@ -13,7 +13,6 @@ $(document).ready(function () {
   $(".about-slider").slick({
     infinite: true,
     fade: true,
-    autoplaySpeed: 2500,
     pauseOnFocus: false,
     nextArrow: '<div class="arrow arrow_left"></div>',
     prevArrow: '<div class="arrow arrow_right"></div>',
@@ -25,5 +24,14 @@ $(document).ready(function () {
     pauseOnFocus: false,
     prevArrow: '<div class="feedback__arrow arrow_left"></div>',
     nextArrow: '<div class="feedback__arrow arrow_right"></div>',
+  });
+  $(".content-product__list").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    speed: 500,
+    pauseOnFocus: false,
+    prevArrow: '<div class="content-product__arrow arrow_left"></div>',
+    nextArrow: '<div class="content-product__arrow arrow_right"></div>',
   });
 });
