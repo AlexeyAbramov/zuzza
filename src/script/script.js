@@ -1,8 +1,10 @@
 $(document).ready(function () {
+
+  //cart
   $("#minus").on("click", function () {
       $input = $(this).parent().find('input');
-      let cnt = parseInt($input.val());
-      cnt = cnt < 1 ? 0 : cnt-1;
+      let cnt = parseInt($input.val()-1);
+      cnt = cnt < 1 ? 1 : cnt;
       $input.val(cnt);
   });
   $("#plus").on("click", function () {
@@ -10,6 +12,8 @@ $(document).ready(function () {
     let cnt = parseInt($input.val())+1;
     $input.val(cnt);
   });
+
+  // slider
   $(".about-slider").slick({
     infinite: true,
     fade: true,
