@@ -158,7 +158,7 @@ select:focus {
 }
 
 main .order {
-  padding-top: 60px;
+  padding: 60px 0 110px;
 }
 main .order__inner * {
   font-family: Montserrat, sans-serif;
