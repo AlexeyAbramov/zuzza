@@ -284,6 +284,9 @@ select:focus {
   display: block;
   position: relative;
 }
+.same-products .content-product__bg:focus {
+  outline: none;
+}
 .same-products .content-product__bg::after {
   position: absolute;
   display: block;

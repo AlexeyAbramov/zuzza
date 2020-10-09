@@ -1,15 +1,14 @@
 $(document).ready(function () {
-
   //cart
   $("#minus").on("click", function () {
-      $input = $(this).parent().find('input');
-      let cnt = parseInt($input.val()-1);
-      cnt = cnt < 1 ? 1 : cnt;
-      $input.val(cnt);
+    $input = $(this).parent().find("input");
+    let cnt = parseInt($input.val() - 1);
+    cnt = cnt < 1 ? 1 : cnt;
+    $input.val(cnt);
   });
   $("#plus").on("click", function () {
-    $input = $(this).parent().find('input');
-    let cnt = parseInt($input.val())+1;
+    $input = $(this).parent().find("input");
+    let cnt = parseInt($input.val()) + 1;
     $input.val(cnt);
   });
 
@@ -37,5 +36,9 @@ $(document).ready(function () {
     pauseOnFocus: false,
     prevArrow: '<div class="content-product__arrow arrow_left"></div>',
     nextArrow: '<div class="content-product__arrow arrow_right"></div>',
+  });
+  fancybox;
+  $('[data-fancybox="gallery"]').fancybox({
+
   });
 });
