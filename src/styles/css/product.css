@@ -283,7 +283,6 @@ select:focus {
 .same-products .content-product__bg {
   display: block;
   position: relative;
-  cursor: pointer;
 }
 .same-products .content-product__bg::after {
   position: absolute;
