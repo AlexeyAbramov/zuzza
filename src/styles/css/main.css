@@ -196,13 +196,13 @@ select:focus {
 }
 
 .about-slider__item1 {
-  background: url("../../../../src/img/main/about/banner_1.jpg");
+  background: url("../../../src/img/main/about/banner_1.jpg");
 }
 .about-slider__item2 {
-  background: url("../../../../src/img/main/about/banner_2.jpg");
+  background: url("../../../src/img/main/about/banner_2.jpg");
 }
 .about-slider__item3 {
-  background: url("../../../../src/img/main/about/banner_3.jpg");
+  background: url("../../../src/img/main/about/banner_3.jpg");
 }
 .about-slider .slick-track {
   height: 596px;
