@@ -16,14 +16,14 @@
       z-index: 1;
     }
     &::before{
-      background: url('../../../../../src/img/main/subscribe/flower-1.png') 0 100% no-repeat, url('../../../../../src/img/main/subscribe/flower-2.png') 100% 0 no-repeat;
+      background: url('../../../src/img/main/subscribe/flower-1.png') 0 100% no-repeat, url('../../../src/img/main/subscribe/flower-2.png') 100% 0 no-repeat;
       width: 71px;
       height: 91px;
       top: -17px;
       left: 20px;
     }
     &::after{
-      background: url('../../../../../src/img/main/subscribe/flower.png') no-repeat;
+      background: url('../../../src/img/main/subscribe/flower.png') no-repeat;
       width: 78px;
       height: 262px;
       right: 10%;

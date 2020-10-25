@@ -355,14 +355,14 @@ select:focus {
   height: 56px;
 }
 .feedback .arrow_left {
-  background: url("../../../../../src/img/main/feedback/next.png");
+  background: url("../../../src/img/main/feedback/next.png");
   transform: scaleX(-1);
   top: calc(50% - 28px);
   left: -80px;
   cursor: pointer;
 }
 .feedback .arrow_right {
-  background: url("../../../../../src/img/main/feedback/next.png");
+  background: url("../../../src/img/main/feedback/next.png");
   top: calc(50% - 28px);
   right: -80px;
   cursor: pointer;
@@ -419,7 +419,7 @@ select:focus {
   justify-content: space-between;
   margin-top: 60px;
   min-height: 446px;
-  background: url("../../../../../src/img/main/facts/honey.png") no-repeat center 80%;
+  background: url("../../../src/img/main/facts/honey.png") no-repeat center 80%;
 }
 .facts .content-facts__left {
   flex: 0 0 42%;
@@ -545,14 +545,14 @@ select:focus {
   z-index: 1;
 }
 .subscribe__inner::before {
-  background: url("../../../../../src/img/main/subscribe/flower-1.png") 0 100% no-repeat, url("../../../../../src/img/main/subscribe/flower-2.png") 100% 0 no-repeat;
+  background: url("../../../src/img/main/subscribe/flower-1.png") 0 100% no-repeat, url("../../../src/img/main/subscribe/flower-2.png") 100% 0 no-repeat;
   width: 71px;
   height: 91px;
   top: -17px;
   left: 20px;
 }
 .subscribe__inner::after {
-  background: url("../../../../../src/img/main/subscribe/flower.png") no-repeat;
+  background: url("../../../src/img/main/subscribe/flower.png") no-repeat;
   width: 78px;
   height: 262px;
   right: 10%;

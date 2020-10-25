@@ -21,14 +21,14 @@
     height: 56px;
   }
   .arrow_left {
-    background: url("../../../../../src/img/main/feedback/next.png");
+    background: url("../../../src/img/main/feedback/next.png");
     transform: scaleX(-1);
     top: calc(50% - 28px);
     left: -80px;
     cursor: pointer;
   }
   .arrow_right {
-    background: url("../../../../../src/img/main/feedback/next.png");
+    background: url("../../../src/img/main/feedback/next.png");
     top: calc(50% - 28px);
     right: -80px;
     cursor: pointer;
