@@ -37,8 +37,4 @@ $(document).ready(function () {
     prevArrow: '<div class="content-product__arrow arrow_left"></div>',
     nextArrow: '<div class="content-product__arrow arrow_right"></div>',
   });
-  fancybox;
-  $('[data-fancybox="gallery"]').fancybox({
-
-  });
 });
