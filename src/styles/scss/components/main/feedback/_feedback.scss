@@ -1,0 +1,80 @@
+@import "../../../colors";
+
+.feedback {
+  position: relative;
+  padding: 60px 0;
+  background-color: #F9F9F9;
+  &__heading {
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  &__arrow {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 64px;
+    height: 56px;
+  }
+  .arrow_left {
+    background: url("../../../../../src/img/main/feedback/next.png");
+    transform: scaleX(-1);
+    top: calc(50% - 28px);
+    left: -80px;
+    cursor: pointer;
+  }
+  .arrow_right {
+    background: url("../../../../../src/img/main/feedback/next.png");
+    top: calc(50% - 28px);
+    right: -80px;
+    cursor: pointer;
+  }
+  .list-feedback {
+    .wrapper_item {
+      display: flex;
+      box-shadow: 0 0 9px 4px rgb(0 0 0 / 16%); // shadow
+      border-radius: 5px;
+    }
+    &__item {
+      padding: 10px;
+    }
+    &__item,
+    .slick-slide {
+      &:focus {
+        outline: none;
+      }
+    }
+    &__bg{
+     min-width: 180px;
+    }
+    .slick-slide {
+      margin-right: 10px;
+    }
+    .slick-track {
+      padding: 10px 0;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 18px 0 20px 18px;
+    }
+    &__title,
+    &__text {
+      font-size: 16px;
+      font-weight: normal;
+    }
+    &__text{
+        -webkit-line-clamp: 5; /* количество строк */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 110px;
+        padding-right: 20px;
+    }
+  }
+}

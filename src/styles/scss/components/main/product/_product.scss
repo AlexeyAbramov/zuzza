@@ -1,0 +1,103 @@
+@import "../../../colors";
+
+.product-cart {
+  padding-bottom: 50px;
+  background-color: #f9f9f9;
+  &__inner {
+    display: flex;
+  }
+  &__content {
+    margin-top: 30px;
+  }
+  &__heading {
+    font-family: Montserrat, sans-serif;
+  }
+  &__category {
+    font-family: inherit;
+    font-size: 21px;
+  }
+  &__title,
+  &__price {
+    font-size: 32px;
+    line-height: 125%;
+    font-family: inherit;
+    font-weight: $semi-bold;
+  }
+  &__price {
+    font-weight: $semi-bold;
+    color: $orange;
+  }
+  .description-cart {
+    &__item {
+      font-family: Montserrat, sans-serif;
+      margin-top: 10px;
+    }
+    margin-top: 30px;
+    &__title {
+      font-family: inherit;
+      font-weight: $semi-bold;
+    }
+    &__text {
+      font-family: inherit;
+    }
+  }
+  .buy-product {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    &__count {
+      background-color: $white;
+      border: 1px solid #ffc700;
+      border-radius: 56px;
+      display: flex;
+      & > span,
+      input {
+        width: 56px;
+        height: 56px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      input {
+        text-align: center;
+        border: none;
+        border-left: 1px solid #ffc700;
+        border-right: 1px solid #ffc700;
+      }
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    }
+    &__minus,
+    &__plus {
+      cursor: pointer;
+      font-size: 30px;
+    }
+    &__quantity {
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      border-left: 1px solid #ffc700;
+      border-right: 1px solid #ffc700;
+    }
+    &__add {
+      text-align: center;
+      width: 130px;
+      font-family: Montserrat, sans-serif;
+      font-weight: $semi-bold;
+      padding: 14.2px 25px;
+      margin-left: 50px;
+    }
+  }
+}

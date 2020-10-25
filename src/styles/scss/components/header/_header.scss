@@ -1,0 +1,69 @@
+@import "../../colors";
+
+.header {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  &__inner {
+    height: 133px;
+    display: flex;
+    align-items: center;
+  }
+  &__column {
+    flex: 1 1 auto;
+  }
+  &__cart {
+    text-align: end;
+    position: relative;
+    .cart {
+      &__count {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -3px;
+        right: -9px;
+        width: 17px;
+        height: 17px;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+        background-color: yellow;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.nav {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    &__link{
+      color: $black;
+    }
+  }
+}
+select{
+    cursor: pointer;
+}
+select,
+select:focus{
+    border: none;
+}
+.contacts {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  min-height: 64px;
+  &__phone {
+    text-align: end;
+  }
+  &__link{
+    color: $black;
+  }
+}
+.social {
+  display: flex;
+  justify-content: flex-end;
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+}

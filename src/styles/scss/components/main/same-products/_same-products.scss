@@ -1,0 +1,118 @@
+@import "../../../colors";
+
+.same-products {
+  padding: 60px 0 50px;
+  .content-product {
+    &__list {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    &__wrapper {
+      box-shadow: 0 1px 9px 4px rgb(0 0 0 / 5%); // shadow
+      padding-bottom: 20px;
+    }
+    &__item {
+      flex: 0 1 30%;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 20px;
+      transition: 0.3s;
+      background-color: $white;
+      &:hover {
+        transform: scale(1.02);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &__bg {
+      display: block;
+      position: relative;
+      &:focus{
+        outline: none;
+      }
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 32px;
+        height: 32px;
+        right: 20px;
+        bottom: 20px;
+        background-color: red;
+        background: url("../../../../../src/img/main/category-catalog/zoom.png")
+          no-repeat;
+      }
+    }
+    &__icon {
+      width: 100%;
+    }
+    //slick-arrows
+    &__arrow {
+      cursor: pointer;
+      width: 64px;
+      height: 56px;
+      background: url("../../../../../src/img/main/same-products/arrow.png")
+        no-repeat center center;
+      position: absolute;
+      top: 44%;
+      transition: 1s;
+      &:hover {
+        transform: scale(1.2);
+      }
+      &.arrow_left {
+        transform: scale(-1);
+        left: -72px;
+      }
+      &.arrow_right {
+        right: -72px;
+      }
+    }
+    .description-product {
+      padding: 0 20px;
+      &__heading {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        & h4 {
+          color: $black;
+          flex: 0 0 auto;
+        }
+      }
+      &__title {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: inherit;
+        flex: 0 0 25%;
+        text-align: start;
+      }
+
+      &__text {
+        text-align: start;
+        &:last-child {
+          align-self: flex-end;
+        }
+      }
+      &__price {
+        font-size: inherit;
+      }
+      &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      &__item {
+        display: flex;
+      }
+    }
+    &__button {
+      display: block;
+      width: 39%;
+      margin: 20px auto 0;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+  }
+}

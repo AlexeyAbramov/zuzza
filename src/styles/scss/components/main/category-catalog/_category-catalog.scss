@@ -1,0 +1,106 @@
+@import "../../../colors";
+
+.category-catalog {
+  position: relative;
+  padding: 60px 0 50px;
+  text-align: center;
+  .goods-catalog {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    &__item {
+      flex: 0 1 30%;
+      box-shadow: 0 1px 9px 4px rgb(0 0 0 / 5%); // shadow
+      border-radius: 10px;
+      margin-top: 20px;
+      padding-bottom: 20px;
+      transition: .3s;
+      background-color: $white;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+    &__bg {
+      position: relative;
+      cursor: pointer;
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 32px;
+        height: 32px;
+        right: 20px;
+        bottom: 20px;
+        background-color: red;
+        background: url("../../../../../src/img/main/category-catalog/zoom.png")
+          no-repeat;
+      }
+    }
+    .description-product {
+      padding: 0 20px;
+      &__heading {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        & h4 {
+          color: $black;
+          flex: 0 0 auto;
+        }
+      }
+      &__title {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: inherit;
+        flex: 0 0 25%;
+        text-align: start;
+      }
+
+      &__text {
+        text-align: start;
+        &:last-child {
+          align-self: flex-end;
+        }
+      }
+      &__price {
+        font-size: inherit;
+      }
+      &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      &__item {
+        display: flex;
+      }
+    }
+    &__button {
+      display: block;
+      width: 39%;
+      margin: 20px auto 0;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+  }
+  &::after,
+  &::before{
+    position: absolute;
+    display: block;
+    content: '';
+    z-index: -1;
+  }
+  &::before{
+    width: 417px;
+    height: 243px;
+    background: url('../../../../../src/img/main/category-catalog/limon.png') no-repeat;
+    bottom: 4%;
+  }
+  &::after{
+    width: 385px;
+    height: 245px;
+    background: url('../../../../../src/img/main/category-catalog/nuts.png') no-repeat;
+    right: -38px;
+    top: 25.6%;
+  }
+}

@@ -1,0 +1,78 @@
+@import "./colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@font-face {
+  font-family: "Reef";
+  src: url("../../font/Reef-Bold.woff2") format("woff2"),
+    url("../../font/Reef-Bold.woff") format("woff");
+}
+html{
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Reef", sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+._container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+h2 {
+  font-size: 52px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  color: $black;
+  background-color: $orange;
+  padding: 12px 0 13px;
+  border: none;
+  position: relative;
+  font-size: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+  &::before {
+    height: 42px;
+    width: 42px;
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    background-color: $orange;
+    transform: rotate(45deg);
+    top: 5px;
+    left: -21px;
+  }
+  &::after {
+    height: 42px;
+    width: 42px;
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    background-color: $orange;
+    right: -21px;
+    bottom: 5px;
+  }
+}

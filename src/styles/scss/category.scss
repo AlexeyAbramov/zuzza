@@ -1,0 +1,10 @@
+@import './settings';
+
+@import "./components/header/header";
+@import "./components/main/feedback/feedback";
+@import "./components/main/recipes/recipes";
+@import "./components/main/subscribe/subscribe";
+@import "./components/footer/footer";
+@import '../scss/components/main/category-catalog/category-catalog';
+@import '../scss/components/main/category-product/category-product';
+@import '../scss/components/main/delivery/delivery';

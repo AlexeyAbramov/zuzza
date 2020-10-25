@@ -1,7 +1,5 @@
 #build task
 /.vscode
 
-#scss folder
-/src/styles/scss
 #css map
 /src/styles/css/main.css.map

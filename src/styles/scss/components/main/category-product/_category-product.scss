@@ -1,0 +1,51 @@
+@import "../../../colors";
+
+.category-product {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  position: relative;
+  &__heading {
+    max-width: 49%;
+    margin-right: auto;
+  }
+  &__text {
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    line-height: 150%;
+  }
+  .features-product {
+    max-width: 60%;
+    &__text {
+      font-family: Arial, sans-serif;
+      line-height: 150%;
+      margin-left: 13px;
+    }
+    &__list {
+      margin-top: 30px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+  }
+  &::before {
+    background: url("../../../../../src/img/main/category-product/honey.png")
+      no-repeat;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    z-index: 4;
+  }
+  &::after {
+    width: 37%;
+    top: 0;
+    right: 0;
+    background-color: $orange;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../colors";
+
+.present {
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 78px 0;
+  }
+  background-color: $orange;
+  &__heading {
+    flex: 0 1 56%;
+  }
+  &__text{
+      max-width: 69%;
+  }
+  &__button{
+    align-self: flex-end;
+  }
+  .btn_go {
+    padding-left: 57px;
+    padding-right: 57px;
+    background-color: #fff;
+    &::after,
+    &::before {
+      background-color: #fff;
+    }
+  }
+}

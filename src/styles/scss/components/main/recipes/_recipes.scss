@@ -1,0 +1,36 @@
+@import '../../../colors';
+
+.recipes{
+    background-color: #F9F9F9;
+    &__inner{
+        padding: 60px 0;
+    }
+    &__heading{
+        text-align: center;
+    }
+    .content-recipes{
+        margin-top: 30px;
+        &__list{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item{
+            flex: 0 1 31%;
+            box-shadow: 0 0 9px 4px rgb(0 0 0 / 16%);
+        }
+        &__heading{
+            padding: 25px 0 14px 20px;
+        }
+        &__picture{
+            position: relative;
+        }
+        &__category{
+            padding: 5px 20px;
+            background-color: $orange;
+            position: absolute;
+            left: 20px;
+            bottom: -5%;
+            z-index: 999;
+        }
+    }
+}

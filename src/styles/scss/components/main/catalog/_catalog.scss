@@ -1,0 +1,68 @@
+@import "../../../colors";
+
+.catalog {
+  position: relative;
+  padding-bottom: 60px;
+  &__heading {
+    margin-top: 60px;
+  }
+  &__title {
+    text-align: center;
+  }
+  .items-catalog {
+    margin-top: 30px;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+    .item-catalog {
+      &:nth-child(1) {
+        background: url("../../../../../src/img/main/catalog/classic-honey.png")
+          center;
+      }
+      &:nth-child(2) {
+        background: url("../../../../../src/img/main/catalog/crem-honey.png")
+          center;
+      }
+      &:nth-child(3) {
+        background: url("../../../../../src/img/main/catalog/box-honey.png")
+          center;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex: 0 0 32%;
+      padding: 40px 0 30px;
+      height: 520px;
+      border-radius: 5px;
+      box-shadow: 0 1px 9px 4px rgb(0 0 0 / 5%);  // shadow
+      .btn_look {
+        color: $black;
+        width: 48%;
+      }
+    }
+  }
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 320px;
+    height: 443px;
+    background: url("../../../../../src/img/main/catalog/1.png") no-repeat;
+    bottom: 4%;
+    z-index: -1;
+  }
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 320px;
+    height: 278px;
+    background: url("../../../../../src/img/main/catalog/2.png") no-repeat;
+    bottom: 10%;
+    right: 0;
+    z-index: -1;
+  }
+}

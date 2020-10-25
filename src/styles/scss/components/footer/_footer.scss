@@ -1,0 +1,46 @@
+@import "../../colors";
+
+.footer {
+  a {
+    font-family: "Arial", sans-serif;
+    color: $black;
+  }
+  li {
+    line-height: 25px;
+  }
+  height: 327px;
+  background-color: #f9f9f9;
+  &-top {
+    padding: 50px 0 44px;
+    display: flex;
+    &__column {
+      flex: 0 0 25%;
+    }
+    &__column:not(:last-child) {
+      border-right: 1px solid #e3e4e3;
+    }
+    &__column:nth-child(2) {
+      padding-left: 8%;
+    }
+    &__column:last-child {
+      flex: 0 0 40%;
+      padding-left: 10%;
+      li {
+        line-height: 40px;
+      }
+    }
+  }
+  .contacts-footer{
+    &__link{
+      margin-left: 12px;
+    }
+  }
+  &-bottom {
+    &__text {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      padding: 10px 0;
+    }
+  }
+}
