@@ -273,13 +273,13 @@ select:focus {
   box-shadow: 0 1px 9px 4px rgba(0, 0, 0, 0.05);
 }
 .catalog .items-catalog .item-catalog:nth-child(1) {
-  background: url("../../../../../src/img/main/catalog/classic-honey.png") center;
+  background: url("../../../src/img/main/catalog/classic-honey.png") center;
 }
 .catalog .items-catalog .item-catalog:nth-child(2) {
-  background: url("../../../../../src/img/main/catalog/crem-honey.png") center;
+  background: url("../../../src/img/main/catalog/crem-honey.png") center;
 }
 .catalog .items-catalog .item-catalog:nth-child(3) {
-  background: url("../../../../../src/img/main/catalog/box-honey.png") center;
+  background: url("../../../src/img/main/catalog/box-honey.png") center;
 }
 .catalog .items-catalog .item-catalog .btn_look {
   color: #000;
@@ -291,7 +291,7 @@ select:focus {
   content: "";
   width: 320px;
   height: 443px;
-  background: url("../../../../../src/img/main/catalog/1.png") no-repeat;
+  background: url("../../../src/img/main/catalog/1.png") no-repeat;
   bottom: 4%;
   z-index: -1;
 }
@@ -301,7 +301,7 @@ select:focus {
   content: "";
   width: 320px;
   height: 278px;
-  background: url("../../../../../src/img/main/catalog/2.png") no-repeat;
+  background: url("../../../src/img/main/catalog/2.png") no-repeat;
   bottom: 10%;
   right: 0;
   z-index: -1;

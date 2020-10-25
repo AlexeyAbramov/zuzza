@@ -18,15 +18,15 @@
     }
     .item-catalog {
       &:nth-child(1) {
-        background: url("../../../../../src/img/main/catalog/classic-honey.png")
+        background: url("../../../src/img/main/catalog/classic-honey.png")
           center;
       }
       &:nth-child(2) {
-        background: url("../../../../../src/img/main/catalog/crem-honey.png")
+        background: url("../../../src/img/main/catalog/crem-honey.png")
           center;
       }
       &:nth-child(3) {
-        background: url("../../../../../src/img/main/catalog/box-honey.png")
+        background: url("../../../src/img/main/catalog/box-honey.png")
           center;
       }
       display: flex;
@@ -50,7 +50,7 @@
     content: "";
     width: 320px;
     height: 443px;
-    background: url("../../../../../src/img/main/catalog/1.png") no-repeat;
+    background: url("../../../src/img/main/catalog/1.png") no-repeat;
     bottom: 4%;
     z-index: -1;
   }
@@ -60,7 +60,7 @@
     content: "";
     width: 320px;
     height: 278px;
-    background: url("../../../../../src/img/main/catalog/2.png") no-repeat;
+    background: url("../../../src/img/main/catalog/2.png") no-repeat;
     bottom: 10%;
     right: 0;
     z-index: -1;
